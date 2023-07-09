@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enduro Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Seção do container principal -->
+    <section id="container">
+
+        <!-- Menu principal -->
+        <div id="menu">
+            <!-- Título do jogo -->
+            <h1>Enduro Game<br></h1>
+            <div>
+                <!-- Botão para iniciar o jogo -->
+                <button class="btn-iniciar">Iniciar</button>
+            </div>
+        </div> 
+
+        <!-- Tela de fim de jogo -->
+        <div id="fim-game">
+            <!-- Mensagem de "Game Over" -->
+            <h1 class="msg-fim-game">Game Over</h1>
+            <!-- Placar final -->
+            <div class="placar">
+                <div class="pontos-final">
+                    <h2>Pontuação Final</h2>
+                    <h1><span class="insert-ponto"></span> </h1>
+                </div>
+                <div class="qtd-gasolina">
+                    <h2>Tanques Coletados</h2>
+                    <h1><span class="insert-tanque"></span></h1>
+                </div>
+            </div>
+            <div>
+                <!-- Botão para reiniciar o jogo -->
+                <button class="btn-reiniciar">Jogar Novamente</button>
+            </div>
+        </div>
+
+        <!-- Cenário do jogo -->
+        <div id="cenario">
+            <!-- Barreiras no cenário -->
+            <div class="barreira"></div>
+            <div class="barreira"></div>
+            <!-- Elemento para representar o carro do jogador -->
+            <div id="carro"></div> 
+        </div>   
+        <!-- Pontuação e barra de gasolina -->
+        <div id="pontuacao">
+            <div>
+                <h4>Pontuação</h4>
+                <div class="box-ponto">
+                    <h1 id="pontos"></h1>
+                </div>
+            </div>
+            <div class="gasolina">
+                <h1>Gasolina</h1>
+                <div class="gasolina-barra">
+                    <div id="barra"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de instruções -->
+    <div id="instrucoes">
+        <h2>Desvie dos obstáculos e acumule pontos </h2>
+        <!-- Descrição dos elementos do jogo -->
+        <div>
+            <img src="img/7.png" width="50">
+            <h4>: Posto de Abastecimento </h4>
+        </div>
+        <div>
+            <img src="img/5.png" width="50">
+            <h4>: Ganhe 10 pontos extras</h4>
+        </div>
+
+        <!-- Escolha de cenário -->
+        <h3> Escolha em qual cenário deseja jogar </h3>
+        <div>
+            <button id="btn-diario">Diário</button>
+        </div>
+        <div>
+            <button id="btn-cerracao">Cerração</button>
+        </div>
+        <div>
+            <button id="btn-noturno">Noturno</button>
+        </div>
+        <div>
+            <button id="btn-neve">Neve</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
